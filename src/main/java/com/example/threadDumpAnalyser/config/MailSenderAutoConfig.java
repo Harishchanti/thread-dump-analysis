@@ -1,4 +1,4 @@
-package com.example.threadDumpAnalyser.controller.config;
+package com.example.threadDumpAnalyser.config;
 
 
 import org.springframework.beans.factory.annotation.Autowired;

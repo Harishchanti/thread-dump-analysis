@@ -1,4 +1,4 @@
-package com.example.threadDumpAnalyser.controller.config;
+package com.example.threadDumpAnalyser.config;
 
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;

@@ -1,6 +1,6 @@
 package com.example.threadDumpAnalyser.service;
 
-import com.example.threadDumpAnalyser.controller.config.ThreadAnalysisConfig;
+import com.example.threadDumpAnalyser.config.ThreadAnalysisConfig;
 import com.example.threadDumpAnalyser.model.ThreadAnalysisReport;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;

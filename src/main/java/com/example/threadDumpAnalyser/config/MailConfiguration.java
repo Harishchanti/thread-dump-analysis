@@ -1,4 +1,4 @@
-package com.example.threadDumpAnalyser.controller.config;
+package com.example.threadDumpAnalyser.config;
 
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
@@ -15,8 +15,7 @@ public class MailConfiguration {
     private int port = 587;
     private boolean auth = true;
     private boolean enable = true;
-    private String from = "harish.chanti94@gmail.com";
-    private String username = "harish.chanti94@gmail.com";
-    private String password = "7411489557";
+    private String username;
+    private String password;
 
 }
