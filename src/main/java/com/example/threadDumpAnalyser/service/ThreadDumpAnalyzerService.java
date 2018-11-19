@@ -32,8 +32,6 @@ public class ThreadDumpAnalyzerService {
     @Autowired
     ThreadAnalysisConfig threadAnalysisConfig;
 
-    final static String FAST_THREAD_API = "http://api.fastthread.io/fastthread-api?apiKey=44f1da77-a8b8-4f2e-bd00-0a9f1c0d9b1e";
-
 
     private void sendMail(String[] recipients, String message) {
 
@@ -72,7 +70,7 @@ public class ThreadDumpAnalyzerService {
 
 
             HttpResponse<ThreadAnalysisReport> response = Unirest
-                    .post(FAST_THREAD_API)
+                    .post(threadAnalysisConfig.getUrl()).queryString("apiKey",threadAnalysisConfig.getApikey())
                     .field("file", new File("threadDump.txt"))
                     .asObject(ThreadAnalysisReport.class);
 
@@ -97,7 +95,7 @@ public class ThreadDumpAnalyzerService {
     }
 
 
-    @Scheduled(cron = "${threadAnalysis.cronPattern}")
+    @Scheduled(cron = "${threadAnalysis.cronpattern}")
     private void analyse() {
 
         try {

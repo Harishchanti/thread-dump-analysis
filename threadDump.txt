@@ -150,20 +150,6 @@
         at java.lang.Thread.run(Thread.java:748)
 
 "http-nio-8080-exec-2" 
-   java.lang.Thread.State: WAITING
-        at sun.misc.Unsafe.park(Native Method)
-        at java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
-        at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
-        at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
-        at org.apache.tomcat.util.threads.TaskQueue.take(TaskQueue.java:103)
-        at org.apache.tomcat.util.threads.TaskQueue.take(TaskQueue.java:31)
-        at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
-        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
-        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-        at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-        at java.lang.Thread.run(Thread.java:748)
-
-"http-nio-8080-exec-1" 
    java.lang.Thread.State: RUNNABLE
         at sun.management.ThreadImpl.getThreadInfo1(Native Method)
         at sun.management.ThreadImpl.getThreadInfo(ThreadImpl.java:178)
@@ -221,6 +207,20 @@
         at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
         at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
         at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+        at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+        at java.lang.Thread.run(Thread.java:748)
+
+"http-nio-8080-exec-1" 
+   java.lang.Thread.State: WAITING
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+        at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+        at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+        at org.apache.tomcat.util.threads.TaskQueue.take(TaskQueue.java:103)
+        at org.apache.tomcat.util.threads.TaskQueue.take(TaskQueue.java:31)
+        at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
         at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
         at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
         at java.lang.Thread.run(Thread.java:748)

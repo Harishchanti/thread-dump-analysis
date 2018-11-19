@@ -11,4 +11,6 @@ public class ThreadAnalysisConfig {
     String[] recipients;
     String serviceName;
     String cronPattern;
+    String url;
+    String apikey;
 }
